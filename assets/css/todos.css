@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+span {
+    margin: 5px;
+}
+
+#header h1 {
+    display: inline-block;
+}
+
+#container {
+    max-width: 400px;
+    margin: 10% auto;
+    border: 2px solid green;
+}
