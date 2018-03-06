@@ -11,6 +11,15 @@ span {
     margin: 5px;
 }
 
+.strikethrough {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.hide {
+    display: none;
+}
+
 #header h1 {
     display: inline-block;
 }
