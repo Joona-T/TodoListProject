@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To-Do List</title>
     <script type="text/javascript" src="assets/js/lib/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link rel="stylesheet" href="assets/css/todos.css">
 </head>
 <body>
@@ -15,16 +17,19 @@
         
         <div id="header">
             <h1>To-Do List</h1>
-            <input type="button" value=" - " name="hide">
+            <button><i class="fas fa-minus"></i></button>
         </div>
 
-        <input type="text" name="newTask" placeholder="Add New To-Do">
+        <input id="newTask" type="text" name="newTask" placeholder="Add New To-Do">
 
         <ul>
-            <li><span>D</span>Join the Night's Watch</li>
-            <li><span>D</span>Become friends with Jon</li>
-            <li><span>D</span>Sworn the oath</li>
-            <li><span>D</span>Convince Jon to return to the wall</li>
+            <li><span><i class="fas fa-trash"></i></span>Join the Night's Watch</li>
+            <li><span><i class="fas fa-trash"></i></span>Become friends with Jon</li>
+            <li><span><i class="fas fa-trash"></i></span>Sworn the oath</li>
+            <li><span><i class="fas fa-trash"></i></span>Convince Jon to return to the wall</li>
+            <li><span><i class="fas fa-trash"></i></span>Range beyond the wall</li>
+            <li><span><i class="fas fa-trash"></i></span>Rescue Gilly</li>
+            <li><span><i class="fas fa-trash"></i></span>Aquire Dragonglass</li>
         </ul>
 
     </div>

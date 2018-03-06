@@ -1,14 +1,61 @@
+/* Add custom Game of Thrones font from local files */
+@font-face {
+    font-family: GoT;
+    src: url("Game of Thrones.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Cinzel Decorative', cursive, Arial;
+}
+
+body {
+    background-image: url(map.jpeg);
+    background-color: linear-gradient(to right, #838487, #6C4F3D);  
 }
 
 ul {
     list-style: none;
 }
 
+li {
+    font-weight: bold;
+    background-color: #e3dece;
+    height: 40px;
+    line-height: 40px;
+}
+
+li:nth-of-type(even) {
+    background-color: #F0EDE5;
+}
+
+/* Trash can icon */
 span {
-    margin: 5px;
+    margin: 0px 20px 0px 0px;
+    opacity: 0.7;
+    background-color: #6C4F3D;
+    color: #F0EDE5;
+    height: 40px;
+    text-align: center;
+    width: 0px;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1;
+}
+
+button:focus{
+    outline: none !important;
+}
+
+input:focus {
+    font-weight: bold;
+    outline: none;
 }
 
 .strikethrough {
@@ -16,16 +63,43 @@ span {
     color: gray;
 }
 
-.hide {
-    display: none;
+#container {
+    max-width: 600px;
+    margin: 15% auto;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+#header {
+    background-color: #B18F6A;
 }
 
 #header h1 {
     display: inline-block;
+    font-family: GoT, 'Cinzel Decorative', cursive, Arial;
+    font-size: 1.2em;
+    padding: 20px 10px 10px 20px;
+    margin: auto 0;
 }
 
-#container {
-    max-width: 400px;
-    margin: 10% auto;
-    border: 2px solid green;
+#header button {
+    float: right;
+    color: #e3dece;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+    background-color: #B18F6A;
+    display: inline-block;
+    padding: 0px 10px;
+    margin: 8px 5px 0px 0px;
+}
+
+#newTask {
+    width: 100%;
+    padding: 12px 20px;
+    height: 60px;
+    font-size: 1em;
+    box-sizing: border-box;
+    border: none;
+    background-color: #F0EDE5;
 }

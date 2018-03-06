@@ -42,7 +42,7 @@ $("input[name='newTask']").keypress(function(event) {
     //If user presses enter (which code = 13) and text field is not empty, add new list item.
     if(event.which === 13 && inputValue !== "") {
         //Add new list item with input field's text.
-        $("#container ul").append("<li><span>D</span>" + inputValue + "</li>");
+        $("#container ul").append("<li><span><i class='fas fa-trash'></i></span>" + inputValue + "</li>");
         //Empty the input text field.
         $(this).val("");
     }
@@ -50,14 +50,10 @@ $("input[name='newTask']").keypress(function(event) {
 }); //$("input[name='newTask']").keypress()
 
 //Make hide button work.
-$("input[name='hide']").on("click", function(){
+$("#header button").on("click", function(){
     //Clicking the button toggles "hide" class for the input text field.
-    $("input[name='newTask']").toggleClass("hide");
+    $("input[name='newTask']").fadeToggle(300);
     //Change the button's icon accordingly.
-    if($(this).val() === " - ") {
-        $(this).val(" + ");
-    }
-    else {
-        $(this).val(" - ");
-    }
+    $(this).find("svg").toggleClass("fa-minus fa-plus");
+    
 });
